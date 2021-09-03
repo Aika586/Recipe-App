@@ -51,6 +51,8 @@ const App=()=> {
         <button className="search-button" type="submit">Search</button>
       </form>
 
+      <h2><strong> Your Search Results:</strong></h2>
+
 
     {recipes.map(recipe =>(
      
