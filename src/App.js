@@ -27,7 +27,7 @@ const App=()=> {
   const updateSearch= e =>{
 
   setSearch(e.target.value);
-  console.log(search);
+
   };
 
   const getSearch= e =>{
@@ -51,11 +51,10 @@ const App=()=> {
         <button className="search-button" type="submit">Search</button>
       </form>
 
-      <h2><strong> Your Search Results:</strong></h2>
+  
 
-
+      <div className="recipes">
     {recipes.map(recipe =>(
-     
       <Recipe
       key={recipe.recipe.label} 
       title ={recipe.recipe.label} 
@@ -64,6 +63,7 @@ const App=()=> {
       />
       
     ))}
+    </div>
 
     </div>
   )
